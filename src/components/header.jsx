@@ -1,9 +1,9 @@
-
+import logo from "../../images/react-logo.png";
 // my first custom component;
 function Navbar(){
     return (
     <nav>
-        <img src="../images/react-logo.png" alt="logo"/>
+        <img src={logo} alt="logo"/>
         <ul className="nav-list">
             <li>Menu</li>
             <li>About</li>

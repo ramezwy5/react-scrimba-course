@@ -2,9 +2,9 @@
 import "./index.css";
 
 //page components
-import Header from "./components/header";
-import Footer from "./components/footer";
-import MyPage from "./components/page";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import MyPage from "./components/Page";
 
 
 
