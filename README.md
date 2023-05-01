@@ -1,5 +1,9 @@
 # react-scrimba-course
-React Basics course from Scrimba
+
+
+React Basics course from Scrimba  
+
+
 #setup the environment.
 
 
@@ -14,14 +18,17 @@ for fast process choose + swc
 -- npm run dev.
 
 
-##Folders and Files structuer:
-Delete public, assets folders and .css files
-Create your style file in src folder
-In main.jsx file delete import .css line
-In app.jsx replace everything with:
-(import "./index.css";
+## Folders and Files structuer:
 
-export default function App(){
-  return (TYPE YOUR APP CODE HERE)
-})
+
++ Delete public, assets folders and .css files
++ Create your style file in src folder
++ In main.jsx file delete import .css line
++ In app.jsx replace everything with:  
+(  
+ import "./index.css";  
+
+export default function App(){  
+  return (TYPE YOUR APP CODE HERE);  
+})  
 
