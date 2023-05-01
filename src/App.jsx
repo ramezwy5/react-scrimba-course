@@ -4,7 +4,7 @@ import "./index.css";
 function Navbar(){
   return (
   <nav>
-      <img src="./react-logo.png" alt="LOGO" width="40px"/>
+      <img src="./react-logo.png"  width="40px"/>
       <ul>
           <li>Menu</li>
           <li>About</li>
