@@ -4,7 +4,7 @@
 React Basics course from Scrimba  
 
 
-#setup the environment.
+# setup the environment.
 
 
 - in cmd type npm create vite@latest  
