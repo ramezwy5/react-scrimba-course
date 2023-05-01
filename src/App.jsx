@@ -1,42 +1,14 @@
+// style
 import "./index.css";
 
-// my first custom component;
-function Navbar(){
-  return (
-  <nav>
-      <img src="./react-logo.png"  width="40px"/>
-      <ul>
-          <li>Menu</li>
-          <li>About</li>
-          <li>Contact</li>
-      </ul>
-  </nav>)
-}
+//page components
+import Header from "./components/header";
+import Footer from "./components/footer";
+import MyPage from "./components/page";
 
-/**
-Challenge: 
 
-Part 1: Create a page of your own using a custom Page component
 
-It should return an ordered list with the reasons why you're
-excited to be learning React :)
 
-Render your list to the page
-
- */
-
-function MyPage(){
-  return (
-    <>
-      <h1>Why I learn React</h1>
-      <ol>
-        <li>access advance level in programming</li>
-        <li>improve my skills</li>
-        <li>increase job opportunities</li>
-      </ol>
-    </>
-  )
-}
 
 /**
 Challenge: 
@@ -53,22 +25,11 @@ Part 2:
 
  */
 
-// header
-function Header(){
-  return(
-    <Navbar />
-  )
-}
 
 
-//footer
-function Footer(){
-  return(
-    <p>
-      &copy; 2023 Kaaper development. All rights reserved.
-    </p>
-  )
-}
+
+
+
 export default function App(){
   return (
     <>
