@@ -1,0 +1,49 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.39rem;
+}
+
+img[alt="logo"]{
+    width: 29px;
+    margin-right: 5px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.875rem 1.5625rem;
+    background-color: #21222a;
+    color: #deebf8;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.logo{
+    display: flex;
+    color: #61dafb;
+    align-items:start;
+    letter-spacing: -1px;
+}
+
+.main h1{
+    margin: 2rem 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.main ul{
+    margin: 0 5rem;
+    color: #61DAFB;
+}
+
+.main ul li{
+    margin-bottom: 1rem;
+}
+
