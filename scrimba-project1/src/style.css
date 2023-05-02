@@ -40,10 +40,13 @@ img[alt="logo"]{
 
 .main ul{
     margin: 0 5rem;
-    color: #61DAFB;
 }
 
 .main ul li{
     margin-bottom: 1rem;
 }
 
+.main ul li::marker{
+    font-size: 30px;
+    color: #61DAFB;
+}
