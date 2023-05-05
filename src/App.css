@@ -47,7 +47,9 @@ section {
 .hero--text {
     margin-top: 0;
 }
-
+.main{
+    display: flex;
+}
 .card {
     width: 175px;
     font-size: 12px;

@@ -1,10 +1,10 @@
 //propTypes
 import PrpoTypes from "prop-types"
-import ethlics from "./ethlics"
+
 
 export default function Card(props){
     Card.propTypes = {
-        img: PrpoTypes.node.isRequired,
+        coverImg: PrpoTypes.node.isRequired,
         rating: PrpoTypes.number.isRequired,
         reviewCount: PrpoTypes.node.isRequired,
         location: PrpoTypes.node.isRequired,
@@ -13,25 +13,18 @@ export default function Card(props){
 
     }
 
-    props = ethlics.map(function (ethlic){
-        return(
-            <>
-                <img src={`../images/${ethlic.img}`} className="card--image" />
-                <div className="card--stats">
-                    <img src="../images/star.png" className="card--star" />
-                    <span>{ethlic.rating}</span>
-                    <span className="gray">({ethlic.reviewCount}) • </span>
-                    <span className="gray">{props.location}</span>
-                </div>
-                <p>{ethlic.title}</p>
-                <p><span className="bold">From \${ethlic.price}</span> / person</p>
-            </>     
-        )
-    })
 
     return(
         <div className="card">
-            {props}
+                <img src={`../images/${props.coverImg}`} className="card--image" />
+                <div className="card--stats">
+                    <img src="../images/star.png" className="card--star" />
+                    <span>{props.rating}</span>
+                    <span className="gray">({props.reviewCount}) • </span>
+                    <span className="gray">{props.location}</span>
+                </div>
+                <p>{props.title}</p>
+                <p><span className="bold">From ${props.price}</span> / person</p>
         </div>
     )
 }
