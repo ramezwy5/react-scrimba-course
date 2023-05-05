@@ -14,7 +14,7 @@ function App() {
     return(
         <Card 
         key = {card.id}
-        item = {card}  //exetract data argument element to variable
+        item = {card}  //exetract data argument element to variable it equal to {...card} without assign it to varialbe
         />    
     )
 })
