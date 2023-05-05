@@ -6,7 +6,7 @@ import Navbar from '../public/components/Navbar';
 import Footer from '../public/components/Footer';
 import Card from '../public/components/Card';
 import Hero from '../public/components/Hero';
-import data from "../public/components/data.js"
+import data from "../public/components/data"; // import data here to map it 
 
 function App() {
   
@@ -14,12 +14,7 @@ function App() {
     return(
         <Card 
         key = {card.id}
-        coverImg={card.coverImg}
-        rating={card.stats.rating}
-        reviewCount={card.stats.reviewCount}
-        location={card.location}
-        title={card.title}
-        price={card.price}
+        item = {card}  //exetract data argument element to variable
         />    
     )
 })
