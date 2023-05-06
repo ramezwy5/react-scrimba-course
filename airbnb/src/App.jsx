@@ -2,19 +2,30 @@
 import './App.css'
 
 // components
-import Header from './components/Header';
-import Footer from './components/Footer';
-import MainContent from './components/Maincontent';
+import Navbar from '../public/components/Navbar';
+import Footer from '../public/components/Footer';
+import Card from '../public/components/Card';
+import Hero from '../public/components/Hero';
+import data from "../public/components/data"; // import data here to map it 
 
 function App() {
   
+  const cards = data.map(function (card){
+    return(
+        <Card 
+        key = {card.id}
+        item = {card}  //exetract data argument element to variable it equal to {...card} without assign it to varialbe
+        />    
+    )
+})
 
   return (
-    <>
-      <Header />
-      <MainContent />
+    <div className='container'>
+      <Navbar />
+      <Hero />
+      <section className='main'>{cards}</section>
       <Footer />
-    </>
+    </div>
   )
 }
 
