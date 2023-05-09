@@ -5,7 +5,7 @@ import './App.css'
 // components
 import Header from "../public/components/Header";
 import UserD from "../public/components/UserData";
-import MemeImg from "../public/components/memeImg";
+
 
 
 export default function App() {
@@ -14,10 +14,7 @@ export default function App() {
 return (
     <div className='container'>
       <Header />
-       <UserD 
-       
-      /> 
-      <MemeImg />
+       <UserD /> 
     </div>
     
   )
