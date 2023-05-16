@@ -1,4 +1,4 @@
-#setup the environment.
+# setup the environment.
 
 
 - in cmd type npm create vite@latest  
