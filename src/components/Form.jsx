@@ -1,19 +1,15 @@
 import { useState } from 'react'
-
+import "./Form.css"
 
 export default function Form(){
-    const [count, setCount] = useState(0)
-
-
-    function counts(){
-        setCount(prevCount => prevCount += 1)
-    }
-
+    const [firstName, setFirstName] = useState("")
 
     return( 
-        <form>
-            <h3>{count}</h3>
-            <button className='btn' onClick={counts}>Click Count</button>
+        <form className='form'>
+            <input 
+                type='text'
+                placeholder='First Name'
+            />
         </form>
     )
 }
