@@ -5,9 +5,8 @@ function App() {
   const [count, setCount] = useState(0)
 
   function counts(){
-    console.log(count)
     return(
-      setCount(count => count += 1) 
+      setCount(prevCount => prevCount += 1) 
     )
   }
 
